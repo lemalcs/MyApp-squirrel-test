@@ -34,6 +34,11 @@
             this.locationTextBox = new System.Windows.Forms.TextBox();
             this.versionTextBox = new System.Windows.Forms.TextBox();
             this.btn_HiButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_RootFolder = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.check_IsInstalled = new System.Windows.Forms.CheckBox();
+            this.txt_AppName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -96,12 +101,59 @@
             this.btn_HiButton.UseVisualStyleBackColor = true;
             this.btn_HiButton.Click += new System.EventHandler(this.btn_HiButton_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Root App folder";
+            // 
+            // txt_RootFolder
+            // 
+            this.txt_RootFolder.Location = new System.Drawing.Point(15, 164);
+            this.txt_RootFolder.Name = "txt_RootFolder";
+            this.txt_RootFolder.Size = new System.Drawing.Size(433, 23);
+            this.txt_RootFolder.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 227);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "App name";
+            // 
+            // check_IsInstalled
+            // 
+            this.check_IsInstalled.AutoSize = true;
+            this.check_IsInstalled.Location = new System.Drawing.Point(15, 193);
+            this.check_IsInstalled.Name = "check_IsInstalled";
+            this.check_IsInstalled.Size = new System.Drawing.Size(93, 21);
+            this.check_IsInstalled.TabIndex = 9;
+            this.check_IsInstalled.Text = "Is installed";
+            this.check_IsInstalled.UseVisualStyleBackColor = true;
+            // 
+            // txt_AppName
+            // 
+            this.txt_AppName.Location = new System.Drawing.Point(15, 247);
+            this.txt_AppName.Name = "txt_AppName";
+            this.txt_AppName.Size = new System.Drawing.Size(218, 23);
+            this.txt_AppName.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(460, 155);
+            this.ClientSize = new System.Drawing.Size(460, 283);
+            this.Controls.Add(this.txt_AppName);
+            this.Controls.Add(this.check_IsInstalled);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_RootFolder);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_HiButton);
             this.Controls.Add(this.versionTextBox);
             this.Controls.Add(this.locationTextBox);
@@ -127,6 +179,11 @@
 		private System.Windows.Forms.TextBox locationTextBox;
 		private System.Windows.Forms.TextBox versionTextBox;
         private System.Windows.Forms.Button btn_HiButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_RootFolder;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox check_IsInstalled;
+        private System.Windows.Forms.TextBox txt_AppName;
     }
 }
 

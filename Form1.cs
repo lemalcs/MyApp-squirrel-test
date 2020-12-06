@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Squirrel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -25,6 +26,13 @@ namespace MyApp
 
 			locationTextBox.Text = assembly.Location;
             versionTextBox.Text = assembly.GetName().Version.ToString(3);
+
+			using (var mgr=new UpdateManager(null))
+            {
+				txt_RootFolder.Text= mgr.RootAppDirectory;
+				check_IsInstalled.Checked = mgr.IsInstalledApp;
+				txt_AppName.Text = mgr.ApplicationName;
+            }
 		}
 
         private void btn_HiButton_Click(object sender, EventArgs e)
