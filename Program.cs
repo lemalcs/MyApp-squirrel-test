@@ -14,9 +14,16 @@ namespace MyApp
         static async Task Main()
         {
 
-            using (var mgr = new UpdateManager("D:\\SourceRepo\\MyApp-squirrel-test\\Releases"))
+            try
             {
-                await mgr.UpdateApp();
+                using (var mgr = new UpdateManager("D:\\SourceRepo\\MyApp-squirrel-test\\Releases"))
+                {
+                    await mgr.UpdateApp();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
