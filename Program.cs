@@ -20,14 +20,15 @@ namespace MyApp
                 {
                     await mgr.UpdateApp();
                 }
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Form1());
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+           
         }
     }
 }
