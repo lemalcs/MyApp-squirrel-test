@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.check_IsInstalled = new System.Windows.Forms.CheckBox();
             this.txt_AppName = new System.Windows.Forms.TextBox();
+            this.btn_OpenFileDialog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -143,12 +144,24 @@
             this.txt_AppName.Size = new System.Drawing.Size(218, 23);
             this.txt_AppName.TabIndex = 10;
             // 
+            // btn_OpenFileDialog
+            // 
+            this.btn_OpenFileDialog.BackColor = System.Drawing.Color.SpringGreen;
+            this.btn_OpenFileDialog.Location = new System.Drawing.Point(352, 247);
+            this.btn_OpenFileDialog.Name = "btn_OpenFileDialog";
+            this.btn_OpenFileDialog.Size = new System.Drawing.Size(75, 23);
+            this.btn_OpenFileDialog.TabIndex = 11;
+            this.btn_OpenFileDialog.Text = "Open";
+            this.btn_OpenFileDialog.UseVisualStyleBackColor = false;
+            this.btn_OpenFileDialog.Click += new System.EventHandler(this.btn_OpenFileDialog_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 283);
+            this.Controls.Add(this.btn_OpenFileDialog);
             this.Controls.Add(this.txt_AppName);
             this.Controls.Add(this.check_IsInstalled);
             this.Controls.Add(this.label3);
@@ -184,6 +197,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox check_IsInstalled;
         private System.Windows.Forms.TextBox txt_AppName;
+        private System.Windows.Forms.Button btn_OpenFileDialog;
     }
 }
 

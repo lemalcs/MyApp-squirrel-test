@@ -39,5 +39,11 @@ namespace MyApp
         {
 			MessageBox.Show("Hi this is a new version of this application.");
         }
+
+        private void btn_OpenFileDialog_Click(object sender, EventArgs e)
+        {
+			OpenFileDialog op = new OpenFileDialog();
+			op.ShowDialog();
+        }
     }
 }
