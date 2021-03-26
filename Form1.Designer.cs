@@ -40,6 +40,8 @@
             this.check_IsInstalled = new System.Windows.Forms.CheckBox();
             this.txt_AppName = new System.Windows.Forms.TextBox();
             this.btn_OpenFileDialog = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +81,7 @@
             this.locationTextBox.Location = new System.Drawing.Point(12, 62);
             this.locationTextBox.Name = "locationTextBox";
             this.locationTextBox.ReadOnly = true;
-            this.locationTextBox.Size = new System.Drawing.Size(436, 23);
+            this.locationTextBox.Size = new System.Drawing.Size(458, 23);
             this.locationTextBox.TabIndex = 3;
             this.locationTextBox.TabStop = false;
             // 
@@ -155,12 +157,22 @@
             this.btn_OpenFileDialog.UseVisualStyleBackColor = false;
             this.btn_OpenFileDialog.Click += new System.EventHandler(this.btn_OpenFileDialog_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MyApp.Properties.Resources.Image_aspx7;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 289);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(455, 251);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(460, 283);
+            this.ClientSize = new System.Drawing.Size(482, 552);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_OpenFileDialog);
             this.Controls.Add(this.txt_AppName);
             this.Controls.Add(this.check_IsInstalled);
@@ -179,6 +191,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "MyApp";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,6 +211,7 @@
         private System.Windows.Forms.CheckBox check_IsInstalled;
         private System.Windows.Forms.TextBox txt_AppName;
         private System.Windows.Forms.Button btn_OpenFileDialog;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
